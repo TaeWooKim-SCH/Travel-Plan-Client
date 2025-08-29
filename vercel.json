@@ -1,0 +1,6 @@
+{
+  "env": {
+    "NEXT_PUBLIC_API_URL": "http://your-ec2-ip",
+    "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY": "your_actual_api_key_here"
+  }
+}
