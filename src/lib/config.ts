@@ -1,7 +1,7 @@
 // 환경변수 설정 및 검증
 export const config = {
-  // API 서버 URL
-  apiUrl: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
+  // API 서버 URL (프록시 사용)
+  apiUrl: '/api',
   
   // Google Maps API 키
   googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
