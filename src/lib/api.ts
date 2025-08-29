@@ -1,10 +1,9 @@
 import axios from 'axios'
 import { TravelPlan, CreateTravelPlanRequest } from '@/types'
-
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+import { config } from './config'
 
 const api = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: config.apiUrl,
 })
 
 export const getTravelPlans = async (sortBy: 'popular' | 'likes'): Promise<TravelPlan[]> => {

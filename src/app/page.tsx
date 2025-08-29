@@ -126,7 +126,7 @@ export default function Home() {
         
         setPlans(sortedPlans)
       } catch (error) {
-        console.error('여행 계획을 불러오는데 실패했습니다:', error)
+        console.error('여행 계획을 불러오는데 실패했습니다: ', error)
         // API 실패 시 더미 데이터만 사용
         const sortedPlans = [...dummyPlans].sort((a, b) => {
           if (sortBy === 'likes') {
